@@ -4,8 +4,8 @@ The project is an attemp to recreate popular engine for tibia usning SFML featur
 
 Technologies:
 = C++
-= SFML
 = C#
+= SFML
 
 
 Tibia engine Feature:
@@ -20,5 +20,4 @@ Tibia engine Feature:
 3) Object class 
   - Player
   - Nps
-  - Object
   
