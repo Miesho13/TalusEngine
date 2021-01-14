@@ -2,33 +2,40 @@
   Declaration Object class
 */
 
+
 #ifndef OBJECT_HPP_
 #define OBJECT_HPP_
 
-//
-namespace tibia 
+
+#include "SFML\Graphics.hpp"
+
+namespace Tibia 
 {
-
-  #include "SFML\Graphics.hpp"
-
-  typedef bool Movable;
-
   class Object
   {
     private:
-      sf::Sprite sprite; // Sprite object
-
       sf::Texture mainTexture; // Main Texture
+
+      sf::Sprite sprite; // Sprite object
 
       sf::Vector2f pos; // Posytion 
 
-      
+      sf::RenderWindow & win;
 
+      
     public:
     // Constructors:
-      Object( sf::Texture & tx,  sf::Vector2f ps = sf::Vector2f(0.f, 0.f) );
+      Object( 
+        sf::RenderWindow & w,
+        sf::Texture & tx, 
+        sf::Vector2f ps = sf::Vector2f(0.0f, 0.0f)
+      );
 
-      Object( sf::Sprite & tx,  sf::Vector2f ps = sf::Vector2f(0.f, 0.f) );
+      Object( 
+        sf::RenderWindow & w,
+        sf::Sprite & tx, 
+        sf::Vector2f ps = sf::Vector2f(0.0f, 0.0f) 
+      );
 
     // Methods:
       sf::Texture getTexture( ) const { return this->mainTexture; }
@@ -41,8 +48,9 @@ namespace tibia
 
       void setMainTexture( sf::Texture & tx );
 
-  };
-}
+      virtual void draw( ) const;
 
+  };
+} // namespace Tibia
 
 #endif
