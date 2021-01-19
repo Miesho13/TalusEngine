@@ -1,23 +1,11 @@
-01/01/2020 Tibia Miesho Engine
+01/01/2020 TalusEngine by miesho.
 
 The project is an attemp to recreate popular engine for tibia usning SFML features.
 
 Technologies:
 = C++
-= C#
 = SFML
 
 
-Tibia engine Feature:
+Talus engine feature:
 
-1) Map/environment classes
-  - Tool to create and edit tibi's map.
-  - 
-
-2) All mechanic class:
-  -
-
-3) Object class 
-  - Player
-  - Nps
-  
