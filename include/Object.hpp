@@ -9,7 +9,7 @@
 
 #include "SFML\Graphics.hpp"
 
-namespace Tibia 
+namespace Talus 
 {
   class Object
   {
@@ -51,6 +51,6 @@ namespace Tibia
       virtual void draw( ) const;
 
   };
-} // namespace Tibia
+} // namespace Talus
 
 #endif
